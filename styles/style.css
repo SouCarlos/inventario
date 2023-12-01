@@ -1,0 +1,223 @@
+header{
+    display: flex;
+    background: #8dffeea1;
+    align-items: center;
+    border: solid 2px #000
+    
+}
+.titulo{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    
+}
+.svg_icon{ 
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    transition: transform .5s;
+}
+.svg_icon:hover{
+    transform: scale(1.25);  
+}
+img{
+    max-width: 10rem;
+    margin: 1rem 2rem;
+}
+
+.display_menu{
+    margin-right: 1em;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    background-color: rgb(253, 255, 254);
+    border: solid 2px rgb(0, 0, 241);
+    z-index: 900;
+    opacity: 1;
+    padding: 1.5rem 1.5rem;
+    max-width: max-content;        
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.opcoes_item{
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+   
+}
+.equipamentos{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 5% 95%;
+    width: 100% ;
+    height: 100vh;
+    background-color: rgb(191, 241, 225);
+    grid-template-areas: "opção search" 
+						 "opção tabelas" 
+						 
+}
+
+.lista_Equipamentos{
+    grid-area: opção;
+    display: flex;
+    flex-direction:column;
+    margin: 0rem 2rem;
+    margin-top: 5rem;
+    max-width: 100%;
+}
+.lista_Equipamentos_item{
+    margin-bottom: 2rem;
+    width: 100%;
+    
+}
+
+button{
+    background: transparent;
+    text-decoration: none;
+    color:  rgb(33, 54, 124);
+    border: none;
+    max-width: max-content;
+    text-align: start;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: font-size .3s;
+}
+button:hover{
+    color:rgb(3, 9, 31);
+    font-size: 17px; 
+}
+
+.equipamento_Selectinado{
+    grid-area: tabelas;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+}
+.search{
+    grid-area: search;
+    justify-content: center;
+    display: flex;
+    padding: .75rem 0 ;
+    background: #f8f6f6;
+    max-height: max-content;
+    width: 100%;
+}
+.item_not_Selected{
+    grid-area: 'tabelas';
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    color: rgb(196, 57, 57);
+    margin-top: 10rem;
+    
+}
+.tabela{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+.tabela_colun{
+    padding: 2rem 1rem; 
+    width: 100%;
+}
+.titulo_coluns{
+    margin-top: -1rem;
+    margin-bottom: .75rem;
+    text-align: center;
+}
+.tabela_items{
+    padding: .5rem 0;
+    border-top: 2px solid rgb(134, 134, 207);
+    font-size: 12px;
+}
+.item_quatidade, .item_NI{
+    max-width: 6rem;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    header{
+   max-width: max-content;
+    }
+
+    .titulo{
+        font-size: 10px;
+    }
+    img{
+        max-width: 4rem;
+        margin: .5rem .5rem
+    }
+    .equipamentos {
+        
+        width: 100vw;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 5% 95%;
+        grid-template-areas: "opção search""tabelas tabelas"
+        
+    }
+    button {
+        max-width: 100%;
+        font-size: 8px;
+    }
+    button:hover{
+        color:rgb(3, 9, 31);
+        font-size: 8.5PX; 
+    }
+    .lista_Equipamentos{
+       
+        margin: .3em .5em 0em .5em;
+        max-height: 100vh;
+        gap: 3px;
+        justify-content: center;
+    }
+    .lista_Equipamentos_item {
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+    .tabela {
+        margin: 0 0;
+    }
+    .tabela_items{
+        padding: .5rem 0px;
+        font-size: 7px;
+    }
+    .titulo_coluns {
+        font-size: 8px;
+        margin-bottom: 0.75rem;
+        }
+    .search{
+        font-size: 12px;
+        align-items: center;
+    }
+    #search_item{
+        width: 10rem;
+        /* height: 2rem */
+    }
+    .tabela_colun {
+        padding: 2rem .25rem;
+        width: 100%;
+    }
+.item_quatidade, .item_NI {
+    max-width: 3rem;
+    text-align: center;
+    }
+
+}

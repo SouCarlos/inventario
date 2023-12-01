@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    background-image:  linear-gradient(to right, rgb(110, 204, 241) , rgba(255, 238, 238, 0.918));
+ 
+
+}
+main{
+    height: 100vh;
+    width: 100vw;
+}
+.form_container{
+    display: flex;
+    align-items: center;
+    margin-top: 6em;
+    flex-direction: column;
+    gap: 1em;
+}
+form, .tituloDeCadastro{
+    color: rgb(0, 38, 255);
+    font-size: 24px;   
+}
+.formularioCadastro{
+    display: flex;
+    flex-direction:column;
+}
+.inputsForm{
+    margin-bottom: 1em;
+}
+button{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}

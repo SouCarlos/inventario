@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almox_Container</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="imagem_logo">
+            <img src="/imagens/logo_suzano.png" alt="logo da empresa suzano">
+        </div>
+        <div class="titulo">
+            <h1>CONTAINER ELETRICA/INSTRUMENTAÇÃO SECAGEM</h1>
+        </div>
+        <div class="input">
+                <label for="menu"><img class="svg_icon" src="imagens/icons8-cardápio.svg" alt=""></label>
+                <input id="menu" class="hide" type="checkbox" >
+        </div>
+        <nav class="display_menu hide">
+                <ul class="opcoes">
+                    <li class="opcoes_item"><a href="addRemove.html">Adicionar Item</a></li>
+                    <li class="opcoes_item"><a href="addRemove.html">Remover Item</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section class="equipamentos">
+            <ul class="lista_Equipamentos">
+                <li class="lista_Equipamentos_item" id="eletrica"> <button> ELÉTRICA </button></li>
+                <li class="lista_Equipamentos_item" id="instrumentacao"> <button> INSTRUMENTAÇÃO  </button></li>
+            </ul>
+            <div class="search">
+                <label for="search_item">Procurar Item <input id="search_item" type="search"></label> 
+            </div>
+            <div class="equipamento_Selectinado"> 
+                <div class="item_not_Selected">
+                <p>NENHUMA DISCIPLINA SELECIONADA AINDA</p>
+                </div>
+                <div class="tabelas">
+                    <div class="tabela tabela_eletrica hide">
+                        <ul class="item_nome tabela_colun">
+                            <P class="titulo_coluns">EQUIPAMENTO</P>
+                            <li class="tabela_items">cilindro A eletrica</li>
+                            <li class="tabela_items">cilindro B eletrica</li>
+                            <li class="tabela_items">cilindro C eletrica</li>
+                        </ul>
+                        <ul class="item_descrição tabela_colun">
+                            <P class="titulo_coluns"> DESCRIÇÃO SAP</P>
+                            <li class="tabela_items">cilindro A SAP eletrica</li>
+                            <li class="tabela_items">cilindro B SAP eletrica</li>
+                            <li class="tabela_items">cilindro C SAP eletrica</li>
+                        </ul>
+                        <ul class="item_NI tabela_colun">
+                            <P class="titulo_coluns">NI</P>
+                            <li class="tabela_items">1234</li>
+                            <li class="tabela_items">4321</li>
+                            <li class="tabela_items">3214</li>
+                        </ul>
+                        <ul class="item_quatidade tabela_colun">
+                            <p class="titulo_coluns">QUANTIDADE</p>
+                            <li class="tabela_items">4</li>
+                            <li class="tabela_items">3</li>
+                            <li class="tabela_items">1</li>
+                        </ul>
+                    </div>
+                    <div class="tabela tabela_instrumentacao hide">
+                        <ul class="item_nome tabela_colun">
+                            <P class="titulo_coluns">EQUIPAMENTO</P>
+                            <li class="tabela_items">cilindro A inst</li>
+                            <li class="tabela_items">cilindro B inst</li>
+                            <li class="tabela_items">cilindro C inst</li>
+                        </ul>
+                        <ul class="item_descrição tabela_colun">
+                            <P class="titulo_coluns"> DESCRIÇÃO SAP</P>
+                            <li class="tabela_items">cilindro A SAP inst</li>
+                            <li class="tabela_items">cilindro B SAP inst</li>
+                            <li class="tabela_items">cilindro C SAP inst</li>
+                        </ul>
+                        <ul class="item_NI tabela_colun">
+                            <P class="titulo_coluns">NI</P>
+                            <li class="tabela_items">1234</li>
+                            <li class="tabela_items">4321</li>
+                            <li class="tabela_items">3214</li>
+                        </ul>
+                        <ul class="item_quatidade tabela_colun">
+                            <p class="titulo_coluns">QUANTIDADE</p>
+                            <li class="tabela_items">4</li>
+                            <li class="tabela_items">3</li>
+                            <li class="tabela_items">1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js" type="module"></script>
+    
+    
+</body>
+</html>
+
