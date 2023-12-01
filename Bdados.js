@@ -23,5 +23,5 @@ function resetForm(item){
     descricaoForm.value = null
     NIform.value = null
     quantidadeForm.value = null
-    alert('item salvo')
+    alert('item gravado')
 }
